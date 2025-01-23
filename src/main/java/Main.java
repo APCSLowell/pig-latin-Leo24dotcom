@@ -6,7 +6,6 @@ public static void main(final String[] args) {
 	PigLatin sim = new PigLatin();
         //sim.tester();
 	}
-}
 String[] lines = {"beast","dough","happy","question","star","three","eagle","try"};
 public void setup(){
   for(int i = 0; i < lines.length;i++){
@@ -32,4 +31,6 @@ public int findFirstVowel(String lines){
   }
   return count;
 }
+}
+
 
