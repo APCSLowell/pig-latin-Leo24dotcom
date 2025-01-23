@@ -2,12 +2,13 @@
 
 public class Main {
 	
-	public static void main(final String[] args) {
-		PigLatin sim = new PigLatin();
-        	//sim.tester();
+public static void main(final String[] args) {
+	PigLatin sim = new PigLatin();
+        //sim.tester();
 	}
-	String[] lines = {"beast","dough","happy","question","star","three","eagle","try"};
+
 public void setup(){
+	String[] lines = {"beast","dough","happy","question","star","three","eagle","try"};
   for(int i = 0; i < lines.length;i++){
     if(findFirstVowel(lines[i]) == -1)
      System.out.println(lines[i] + "ay");
@@ -19,6 +20,7 @@ public void setup(){
    System.out.println(lines[i].substring(findFirstVowel(lines[i]),lines[i].length()) + lines[i].substring(0,findFirstVowel(lines[i])) +"ay");
   }
 }
+	
 public int findFirstVowel(String lines){
   String vowel = new String("aeiou");
   int count = -1;
@@ -26,8 +28,7 @@ public int findFirstVowel(String lines){
     for(int x = 1; x <= vowel.length(); x++){
     if(lines.substring(i-1,i).equals (vowel.substring(x-1,x)))
       return i -1;
-
-  }
+    }
   }
   return count;
 }
