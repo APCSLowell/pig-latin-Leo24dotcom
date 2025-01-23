@@ -6,9 +6,7 @@ public class Main {
 		PigLatin sim = new PigLatin();
         	//sim.tester();
 	}
-}
-
-String[] lines = {"beast","dough","happy","question","star","three","eagle","try"};
+	String[] lines = {"beast","dough","happy","question","star","three","eagle","try"};
 public void setup(){
   for(int i = 0; i < lines.length;i++){
     if(findFirstVowel(lines[i]) == -1)
@@ -33,3 +31,5 @@ public int findFirstVowel(String lines){
   }
   return count;
 }
+}
+
