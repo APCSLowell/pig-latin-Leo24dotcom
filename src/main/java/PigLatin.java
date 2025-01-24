@@ -50,23 +50,21 @@ public class PigLatin {
 	    if(findFirstVowel(sWord) == -1) {
 		    return sWord + "ay";
 	    }
-		      for(int i = 0; i < sWord.length;i++){
-    if(findFirstVowel(sWord[i]) == -1){
-     System.out.println(sWord[i] + "ay");
+    if(findFirstVowel(sWord) == -1){
+     System.out.println(sWord + "ay");
     }
-    if(findFirstVowel(sWord[i]) == 0){
-     System.out.println(sWord[i] + "way");
+    if(findFirstVowel(sWord) == 0){
+     System.out.println(sWord + "way");
     }
-    if(sWord[i].substring(0,2).equals("qu")){
-      System.out.println(sWord[i].substring(2,sWord[i].length()) + "qu" + "ay");
+    if(sWord.substring(0,2).equals("qu")){
+      System.out.println(sWord.substring(2,sWord.length()) + "qu" + "ay");
     }
-    if(findFirstVowel(sWord[i] >= 1)){
-   System.out.println(sWord[i].substring(findFirstVowel(sWord[i]),sWord[i].length()) + sWord[i].substring(0,findFirstVowel(sWord[i])) +"ay");
+    if(findFirstVowel(sWord) >= 1){
+   System.out.println(sWord.substring(findFirstVowel(sWord),sWord.length()) + sWord.substring(0,findFirstVowel(sWord)) +"ay");
      }
-			      else {
-		return "ERROR!";
+    else {
+	return "ERROR!";
 	    }
   }
 	    
-    }
 }//end PigLatin class
