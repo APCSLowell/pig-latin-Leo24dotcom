@@ -33,9 +33,9 @@ public class PigLatin {
 	    // your code goes here
   String vowel = new String("aeiou");
   int count = -1;
-  for(int i = 1; i <= lines.length(); i++){
-    for(int x = 1; x <= vowel.length(); x++){
-    if(lines.substring(i-1,i).equals (vowel.substring(x-1,x)))
+  for(int i = 1; i <= sWord.length(); i++){
+    for(int x = 1; x <= sWord.length(); x++){
+    if(sWord.substring(i-1,i).equals (vowel.substring(x-1,x)))
       return i -1;
     }
   }
@@ -50,18 +50,18 @@ public class PigLatin {
 	    if(findFirstVowel(sWord) == -1) {
 		    return sWord + "ay";
 	    }
-		      for(int i = 0; i < lines.length;i++){
-    if(findFirstVowel(lines[i]) == -1){
-     System.out.println(lines[i] + "ay");
+		      for(int i = 0; i < sWord.length;i++){
+    if(findFirstVowel(sWord[i]) == -1){
+     System.out.println(sWord[i] + "ay");
     }
-    if(findFirstVowel(lines[i]) == 0){
-     System.out.println(lines[i] + "way");
+    if(findFirstVowel(sWord[i]) == 0){
+     System.out.println(sWord[i] + "way");
     }
-    if(lines[i].substring(0,2).equals("qu")){
-      System.out.println(lines[i].substring(2,lines[i].length()) + "qu" + "ay");
+    if(sWord[i].substring(0,2).equals("qu")){
+      System.out.println(sWord[i].substring(2,sWord[i].length()) + "qu" + "ay");
     }
-    if(findFirstVowel(lines[i] >= 1)){
-   System.out.println(lines[i].substring(findFirstVowel(lines[i]),lines[i].length()) + lines[i].substring(0,findFirstVowel(lines[i])) +"ay");
+    if(findFirstVowel(sWord[i] >= 1)){
+   System.out.println(sWord[i].substring(findFirstVowel(sWord[i]),sWord[i].length()) + sWord[i].substring(0,findFirstVowel(sWord[i])) +"ay");
      }
 			      else {
 		return "ERROR!";
