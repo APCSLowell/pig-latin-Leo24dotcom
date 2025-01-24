@@ -63,9 +63,10 @@ public class PigLatin {
     if(findFirstVowel(lines[i] >= 1)){
    System.out.println(lines[i].substring(findFirstVowel(lines[i]),lines[i].length()) + lines[i].substring(0,findFirstVowel(lines[i])) +"ay");
      }
-  }
-	    else {
+			      else {
 		return "ERROR!";
 	    }
+  }
+	    
     }
 }//end PigLatin class
