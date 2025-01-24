@@ -31,7 +31,7 @@ public class PigLatin {
         //precondition: sWord is a valid String of length greater than 0.
         //postcondition: returns the position of the first vowel in sWord.  If there are no vowels, returns -1
 	    // your code goes here
-  String vowel = new String("aeiou");
+  String vowel = "aeiou";
   int count = -1;
   for(int i = 1; i <= sWord.length(); i++){
     for(int x = 1; x <= sWord.length(); x++){
